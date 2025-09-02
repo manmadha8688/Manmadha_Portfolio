@@ -1,46 +1,45 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    
+
     <!-- Your new CSS -->
     <link rel="stylesheet" href="../css/modern-portfolio.css">
-    
+
     <link rel="icon" href="../images/fav.jpeg" type="image/png">
-   
+
 
     <title>Manmadha Jayamangala — Full Stack Developer</title>
     <style>
         body {
-      margin: 0;
-      font-family:'Times New Roman', Times, serif;
-      background-color: white;
-      color: #333;
-      transition: background-color 0.3s, color 0.3s;
-    }
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: white;
+            color: #333;
+            transition: background-color 0.3s, color 0.3s;
+        }
 
-    a {
-      text-decoration: none;
-    }
+        a {
+            text-decoration: none;
+        }
 
-    ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-     .navbar-desktop {
+        .navbar-desktop {
             width: 80%;
             position: fixed;
             top: 20px;
@@ -57,104 +56,104 @@
             transition: all 0.3s ease-in-out;
         }
 
-    
-    .navbar-desktop .logo {
-      
+
+        .navbar-desktop .logo {
+
             font-size: 26px;
             font-weight: 700;
             color: #333;
-    }
+        }
 
-    .navbar-desktop .menu {
-    
-        list-style: none;
+        .navbar-desktop .menu {
+
+            list-style: none;
             display: flex;
             gap: 40px;
-    }
+        }
 
-    .navbar-desktop .menu li a {
-         text-decoration: none;
+        .navbar-desktop .menu li a {
+            text-decoration: none;
             color: rgb(43, 40, 40);
             font-size: 18px;
             font-weight: 500;
             transition: color 0.3s ease;
-    }
+        }
 
-    .navbar-desktop .menu li a:hover {
-      color: #00f7ff;
-    }
+        .navbar-desktop .menu li a:hover {
+            color: #00f7ff;
+        }
 
-    /* Theme Toggle */
-    .theme-toggle {
-      font-size: 20px;
-      cursor: pointer;
-      margin-left: 10px;
-    }
+        /* Theme Toggle */
+        .theme-toggle {
+            font-size: 20px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
 
-    /* Mobile Navbar (Hidden by Default) */
-    .navbar-mobile {
-      display: none;
-      flex-direction: column;
-      background-color: #585858;
-      color: white;
-    }
+        /* Mobile Navbar (Hidden by Default) */
+        .navbar-mobile {
+            display: none;
+            flex-direction: column;
+            background-color: #585858;
+            color: white;
+        }
 
-    .mobile-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 12px 20px;
-    }
+        .mobile-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 20px;
+        }
 
-    .mobile-logo {
-      font-size: 18px;
-      font-weight: bold;
-    }
+        .mobile-logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
 
-    .mobile-menu-toggle {
-      font-size: 24px;
-      background: none;
-      border: none;
-      color: white;
-      cursor: pointer;
-    }
+        .mobile-menu-toggle {
+            font-size: 24px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
 
-    .mobile-menu {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-    }
+        .mobile-menu {
+            display: none;
+            flex-direction: column;
+            text-align: center;
+        }
 
-    .mobile-menu li a {
-      color: white;
-      padding: 12px;
-      display: block;
-    }
+        .mobile-menu li a {
+            color: white;
+            padding: 12px;
+            display: block;
+        }
 
-    .mobile-menu li a:hover {
-      background-color: #222;
-    }
+        .mobile-menu li a:hover {
+            background-color: #222;
+        }
 
-    /* Responsive */
-    @media (max-width: 768px) {
-      .navbar-desktop {
-        display: none;
-      }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar-desktop {
+                display: none;
+            }
 
-      .navbar-mobile {
-        display: flex;
-      }
-    }
+            .navbar-mobile {
+                display: flex;
+            }
+        }
 
-    @media (max-width: 480px) {
-      .mobile-logo {
-        font-size: 16px;
-      }
+        @media (max-width: 480px) {
+            .mobile-logo {
+                font-size: 16px;
+            }
 
-      .mobile-menu li a {
-        font-size: 15px;
-      }
-    }
+            .mobile-menu li a {
+                font-size: 15px;
+            }
+        }
 
         /* Dark Mode */
         .dark-mode {
@@ -162,13 +161,15 @@
             color: white;
         }
 
-        .dark-mode .navbar-container  {
+        .dark-mode .navbar-container {
             background: #1e1e1e;
             color: white;
         }
-        .dark-mode .education-box{
-             background: black;
+
+        .dark-mode .education-box {
+            background: black;
         }
+
         .dark-mode .menu li a,
         .dark-mode .logo {
             color: white;
@@ -182,7 +183,7 @@
             color: white;
         }
 
-        
+
 
         /* Social Icons */
         .social-icons {
@@ -221,148 +222,199 @@
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
         }
 
-        /* Scroll to Top Button */
         #scrollToTop {
             position: fixed;
-            bottom: 15px;
-            right: 5px;
+            bottom: 25px;
+            right: 25px;
+            width: 50px;
+            height: 50px;
             border: none;
             border-radius: 50%;
+            background: linear-gradient(135deg, #1dd1a1, #10ac84);
             cursor: pointer;
-            display: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+            transition: all 0.3s ease-in-out;
         }
-        #scrollToTop img{
-            border-radius: 20px;
-            width: 80%;
+
+        #scrollToTop::before {
+            content: "↑";
+            /* Arrow symbol */
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
         }
-        
+
+        #scrollToTop:hover {
+            transform: scale(1.1) rotate(-5deg);
+            box-shadow: 0 8px 20px rgba(16, 172, 132, 0.5);
+        }
+
+
         html {
             scroll-behavior: smooth;
         }
-
     </style>
 </head>
+
 <body>
 
     <!-- Navbar -->
-     <nav class="navbar-desktop" id="navbar-desktop">
-    <div class="logo"> <a href="#about-me"> Manmadha Jayamangala </a></div>
-    <ul class="menu">
-      <li><a href="#how-i-create">Skills</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact-me">Contact me</a></li>
-    </ul>
-    <span class="theme-toggle" onclick="toggleTheme()">🌙</span>
-  </nav>
+    <nav class="navbar-desktop" id="navbar-desktop">
+        <div class="logo"> <a href="#about-me"> Manmadha Jayamangala </a></div>
+        <ul class="menu">
+            <li><a href="#how-i-create">Skills</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact me</a></li>
+        </ul>
+        <span class="theme-toggle" onclick="toggleTheme()">🌙</span>
+    </nav>
 
-  <!-- Mobile Navbar -->
-  <nav class="navbar-mobile" id="navbar-desktop">
-    <div class="mobile-header">
-      <div class="mobile-logo"><a href="#about-me">Manmadha Jayamangala </a></div>
-      <span class="theme-toggle" onclick="toggleTheme()">🌙</span>
-      <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
-    </div>
-    <ul class="mobile-menu" id="mobileMenu">
-      <li><a href="#how-i-create">What I Do</a></li>
-      <li><a href="#education">Learn</a></li>
-      <li><a href="#projects">Work</a></li>
-      <li><a href="#contact-me">Contact</a></li>
-    </ul>
-  </nav>
+    <!-- Mobile Navbar -->
+    <nav class="navbar-mobile" id="navbar-desktop">
+        <div class="mobile-header">
+            <h1 class="mobile-logo"><a href="#about-me">Manmadha Jayamangala </a></h1>
+            <span class="theme-toggle" onclick="toggleTheme()">🌙</span>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">☰</button>
+        </div>
+        <ul class="mobile-menu" id="mobileMenu">
+            <li><a href="#how-i-create">Skills</a></li>
+            <li><a href="#education">Educarion</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact-me">Contact</a></li>
+        </ul>
+    </nav>
 
     <!-- About Me Section -->
     <div class="content">
-        
+
         <div id="about-me"></div>
-    <div class="about animate-on-scroll">
-    <!-- Left Side Content -->
-    <div class="hero-content animate-on-scroll">
-      <h1 class="hero-title">Hey there! 👋</h1>
-      <h3 class="para">I am a passionate <strong>Full Stack Software Developer 🚀</strong> with experience in building web and mobile applications using JavaScript, Django, and other modern frameworks.<br><br>
-      I specialize in creating <strong>scalable, AI-powered, real-time applications</strong> and love turning complex ideas into clean and interactive experiences.</h3>
-      
-      <div class="hero-buttons">
-        <a href="#contact-me" class="btn-secondary">Contact Me</a>
-        <button class="btn-secondary" onclick="window.open('resume.pdf', '_blank')">Download Resume</button>
-      </div>
-    </div>
+        <div class="about animate-on-scroll">
+            <!-- Left Side Content -->
+            <div class="hero-content animate-on-scroll">
+                <h2 class="hero-title">Hey there! 👋</h2>
+                <h3 class="para">
+                    I’m a <strong>Full Stack Software Developer 🚀</strong> passionate about creating digital
+                    experiences that are both impactful and user-friendly. </h3>
+                <h3 class="para">
+                    Skilled in <strong>JavaScript, Django, and modern frameworks</strong>, I focus on building
+                    <strong>web and mobile applications</strong> that are scalable, real-time, and performance-driven.
+                </h3>
+                <h3 class="para">
+                    With a problem-solving mindset and continuous curiosity, I enjoy turning <strong>complex ideas into
+                        clean, interactive applications</strong> while constantly learning and adapting to emerging
+                    technologies.
+                </h3>
+                <div class="hero-buttons">
+                    <a href="#contact-me" class="btn-secondary">Contact Me</a>
+                    <button class="btn-secondary"
+                        onclick="window.open('../MANMADHA-JAYAMANGALA-Resume.pdf', '_blank')">Download Resume</button>
+                </div>
+            </div>
 
-    <!-- Right Side Animation/Image -->
-    <div class="hero-animation animate-on-scroll">
-        <div class="profile">
-        <div class="flip-card">
-            <div class="front"></div>
-            <div class="back"></div>
+            <!-- Right Side Animation/Image -->
+            <div class="hero-animation animate-on-scroll">
+                <div class="profile">
+                    <div class="flip-card">
+                        <div class="front"></div>
+                        <div class="back"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
-    </div>
-  </div>
-        
-        <div id="how-i-create" ></div>
-        
-        <div class="container animate-on-scroll" >
-        
-        <div class="left">
-            <img src="../images/code.gif" alt="Developer Illustration">
+
+        <div id="how-i-create"></div>
+
+        <div class="container animate-on-scroll">
+
+            <div class="left">
+                <img src="../images/code.gif" alt="Developer Illustration">
+            </div>
+
+            <div class="right">
+
+                <h3>My Development Workflow</h3>
+                <p>Crazy Full Stack Developer exploring various tech stacks.</p>
+
+                <!-- Tech Stack Icons -->
+                <div class="tech-icons">
+                    <div>
+                        <i class="devicon-html5-plain colored"></i>
+                        <p>HTML</p>
+                    </div>
+                    <div>
+                        <i class="devicon-css3-plain colored"></i>
+                        <p>CSS</p>
+                    </div>
+                    <div>
+                        <i class="devicon-javascript-plain colored"></i>
+                        <p>JavaScript</p>
+                    </div>
+                    <div> <i class="devicon-react-original colored"></i>
+                        <p>React</p>
+                    </div>
+                    <div>
+                        <i class="devicon-django-plain colored"></i>
+                        <p>Django</p>
+                    </div>
+                    <div>
+                        <i class="fas fa-network-wired" style="color:#09a3d5;"></i>
+                        <p>DRF</p>
+                    </div>
+
+                    <div>
+                        <i class="devicon-mysql-plain colored"></i>
+                        <p>MySQL</p>
+                    </div>
+
+
+                    <div>
+                        <i class="devicon-python-plain colored"></i>
+                        <p>Python</p>
+                    </div>
+
+                    <div><i class="devicon-git-plain colored"></i>
+                        <p>Git</p>
+                    </div>
+                    <div><i class="devicon-github-original colored"></i>
+                        <p>GitHub</p>
+                    </div>
+                    <div><i class="devicon-vscode-plain colored"></i>
+                        <p>VS Code</p>
+                    </div>
+
+
+                </div>
+
+
+
+                <ul class="features">
+                    <li>
+                        Build <strong>responsive and interactive frontends</strong> using <strong>React</strong> with a
+                        <strong>Single Page Application (SPA)</strong> architecture for smooth and modern user
+                        experiences.
+                    </li>
+                    <li>
+                        Design and manage <strong>relational databases</strong> with <strong>MySQL</strong>, ensuring
+                        efficiency, security, and scalability.
+                    </li>
+                    <li>
+                        Develop robust <strong>backends with Django</strong> and expose RESTful APIs using
+                        <strong>Django REST Framework (DRF)</strong> to power real-time, data-driven applications.
+                    </li>
+                    <li>
+                        Implement <strong>SEO best practices</strong> for better visibility, optimized performance, and
+                        search engine ranking.
+                    </li>
+                </ul>
+            </div>
         </div>
-        
-        <div class="right">
-            
-            <h3 >My Development Workflow</h3>
-            <p>Crazy Full Stack Developer exploring various tech stacks.</p>
-            
-           <!-- Tech Stack Icons -->
-<div class="tech-icons">
-    <div>
-        <i class="devicon-html5-plain colored"></i>
-        <p>HTML</p>
-    </div>
-    <div>
-        <i class="devicon-css3-plain colored"></i>
-        <p>CSS</p>
-    </div>
-    <div>
-        <i class="devicon-javascript-plain colored"></i>
-        <p>JavaScript</p>
-    </div>
-    <div>
-        <i class="devicon-django-plain colored"></i>
-        <p>Django</p>
-    </div>
-    <div>
-        <i class="devicon-mysql-plain colored"></i>
-        <p>MySQL</p>
-    </div>
-    
-<div><i class="devicon-postgresql-plain colored"></i><p>PostgreSQL</p></div>
-
-    <div>
-    <i class="devicon-python-plain colored"></i>
-    <p>Python</p>
-</div>
-
-<div><i class="devicon-git-plain colored"></i><p>Git</p></div>
-<div><i class="devicon-github-original colored"></i><p>GitHub</p></div>
-<div><i class="devicon-vscode-plain colored"></i><p>VS Code</p></div>
-    
-    
-</div>
 
 
 
-            <ul class="features">
-                <li>Develop highly interactive Frontend/User Interfaces for web and mobile applications, 
-                    blending technology and creativity to build scalable, efficient, and user-friendly experiences.</li>
-                <li>Build Progressive Web Applications (PWA) using SPA architecture.</li>
-                <li>From designing intuitive frontends to architecting robust backends, I bring ideas to life with clean code and modern frameworks.</li>
-                <li>Integrate ML models & third-party services into my projects for enhanced functionality and automation.</li>
-            </ul>
-        </div>
-    </div>
-
-
-        
         <div id="proficiency"></div>
         <div class="proficiency-container">
             <div class="proficiency-content">
@@ -370,7 +422,7 @@
                     <h2>Skills & Expertise</h2>
 
                     <div class="skill-item">
-                        <p>💻 Programming Fundamentals (Python)</p>
+                        <p>💻 Programming Fundamentals (Python, Basics of DSA)</p>
                         <div class="progress-bar">
                             <div class="progress" style="width: 65%;"></div>
                         </div>
@@ -391,12 +443,12 @@
                     </div>
 
                     <div class="skill-item">
-                        <p>🧩 Frameworks & Libraries (Django)</p>
+                        <p>🧩 Frameworks & Libraries (Django, React)</p>
                         <div class="progress-bar">
                             <div class="progress" style="width: 60%;"></div>
                         </div>
                     </div>
-                    
+
                     <div class="skill-item">
                         <p>🗂️ Version Control & Deployment (Git, GitHub, GitHub Pages, Render)</p>
                         <div class="progress-bar">
@@ -404,14 +456,9 @@
                         </div>
                     </div>
 
-                    <div class="skill-item">
-                        <p>🤖 Machine Learning (Basics – Model Building, NumPy, Pandas)</p>
-                        <div class="progress-bar">
-                            <div class="progress" style="width: 40%;"></div>
-                        </div>
-                    </div>
+
                 </div>
-                
+
                 <div class="proficiency-right">
                     <div class="coding-animation">
                         <img src="../images/coding.gif" alt="Coding Animation" class="coding-gif">
@@ -424,245 +471,294 @@
             </div>
         </div>
 
-        
+
         <div id="education"></div>
         <h2 class="education">Education</h2>
-    
-    <div class="education-container">
-        
-        <div class="animated-image">
-            
-            <img src="../images/hokage.png" alt="Animated Degree">
+
+        <div class="education-container">
+
+            <div class="animated-image">
+
+                <img src="../images/hokage.png" alt="Animated Degree">
+            </div>
+            <section class="education-section">
+
+
+                <!-- B.Tech Section -->
+                <div class="education-box">
+                    <div class="education-header">
+                        <div class="edu-icon1">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3>B.Tech in Computer Science & Engineering</h3>
+                            <p><strong>Bapatla Engineering College (Autonomous)</strong> | 2021 - 2025</p>
+                            <p>Specialized in Full Stack Development with expertise in modern web technologies.</p>
+                        </div>
+                        <i class="fas fa-chevron-down" style="color: #f97316;"></i>
+                    </div>
+
+                    <div class="expand-content">
+                        <p>Bapatla Engineering College (BEC) is a private engineering college established in 1981,
+                            sponsored by the Bapatla Education Society. It offers courses in technology and science,
+                            including information technology, machine learning, and data science.</p>
+                        <p>📍 Located in Bapatla, Andhra Pradesh</p><br>
+                        <p>🌐 <a href="https://becbapatla.ac.in/" target="_blank">Visit College Website</a></p><br>
+                        <img src="../images/bapatla college.jpg" alt="Bapatla Engineering College" class="edu-image">
+                    </div>
+                </div>
+
+                <!-- Intermediate Section -->
+                <div class="education-box">
+                    <div class="education-header">
+                        <div class="edu-icon2">
+                            <i class="fas fa-book"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3>Intermediate (MPC)</h3>
+                            <p><strong>Sri Bharathi Junior College, Eluru</strong> | 2019 - 2021</p>
+                            <p>Focused on Mathematics, Physics, and Chemistry, strengthening analytical and
+                                <br>problem-solving skills.
+                            </p>
+                        </div>
+                        <i class="fas fa-chevron-down" style="color: #f97316;"></i>
+                    </div>
+
+                    <div class="expand-content">
+                        <p>Sri Bharathi Junior College is a well-established institution in Eluru known for its rigorous
+                            academic curriculum in Mathematics, Physics, and Chemistry.</p>
+                        <p>📍 Eluru, Andhra Pradesh</p>
+                        <p>📞 Contact: 08812 - 249225</p>
+                        <p>📧 Email: avijaykumarsb@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- School Section -->
+                <div class="education-box">
+                    <div class="education-header">
+                        <div class="edu-icon3">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h3>Secondary Education (10th Grade)</h3>
+                            <p><strong>Siddhartha Vidyalaya, Satrampadu, Eluru</strong> | 2019</p>
+                            <p>Completed foundational education with a focus on core subjects, developing a strong
+                                academic base.</p>
+                        </div>
+                        <i class="fas fa-chevron-down" style="color: #f97316;"></i>
+                    </div>
+
+                    <div class="expand-content">
+                        <p>KPR & JL Siddhartha Vidyalaya is a reputed school located in Satrampadu, Eluru, known for
+                            academic excellence and student development.</p>
+                        <p>📍 Satrampadu, Eluru, Andhra Pradesh</p><br>
+                        <p>🌐 <a href="https://school.careers360.com/schools/siddhartha-quest-school-eluru"
+                                target="_blank">Visit School Website</a></p><br>
+                        <img src="../images/school.jpg" alt="Siddhartha Vidyalaya" class="edu-image">
+                    </div>
+                </div>
+
+            </section>
         </div>
-        <section class="education-section">
-            
-            
-        <!-- B.Tech Section -->
-        <div class="education-box">
-            <div class="education-header">
-                <div class="edu-icon1">
-                    <i class="fas fa-graduation-cap"></i>
-                </div>
-                <div class="edu-content">
-                    <h3>B.Tech in Computer Science & Engineering</h3>
-                    <p><strong>Bapatla Engineering College (Autonomous)</strong> | 2021 - 2025</p>
-                    <p>Specialized in Full Stack Development with expertise in modern web technologies.</p>
-                </div>
-                <i class="fas fa-chevron-down" style="color: #f97316;"></i>
-            </div>
 
-            <div class="expand-content">
-                <p>Bapatla Engineering College (BEC) is a private engineering college established in 1981, sponsored by the Bapatla Education Society. It offers courses in technology and science, including information technology, machine learning, and data science.</p>
-                <p>📍 Located in Bapatla, Andhra Pradesh</p><br>
-                <p>🌐 <a href="https://becbapatla.ac.in/" target="_blank">Visit College Website</a></p><br>
-                <img src="../images/bapatla college.jpg" alt="Bapatla Engineering College" class="edu-image">
-            </div>
-        </div>
-        
-        <!-- Intermediate Section -->
-        <div class="education-box">
-            <div class="education-header">
-                <div class="edu-icon2">
-                    <i class="fas fa-book"></i>
-                </div>
-                <div class="edu-content">
-                    <h3>Intermediate (MPC)</h3>
-                    <p><strong>Sri Bharathi Junior College, Eluru</strong> | 2019 - 2021</p>
-                    <p>Focused on Mathematics, Physics, and Chemistry, strengthening analytical and <br>problem-solving skills.</p>
-                </div>
-                <i class="fas fa-chevron-down" style="color: #f97316;"></i>
-            </div>
-
-            <div class="expand-content">
-                <p>Sri Bharathi Junior College is a well-established institution in Eluru known for its rigorous academic curriculum in Mathematics, Physics, and Chemistry.</p>
-                <p>📍 Eluru, Andhra Pradesh</p>
-                <p>📞 Contact: 08812 - 249225</p>
-                <p>📧 Email: avijaykumarsb@gmail.com</p>
-            </div>
-        </div>
-
-        <!-- School Section -->
-        <div class="education-box">
-            <div class="education-header">
-                <div class="edu-icon3">
-                    <i class="fas fa-school"></i>
-                </div>
-                <div class="edu-content">
-                    <h3>Secondary Education (10th Grade)</h3>
-                    <p><strong>Siddhartha Vidyalaya, Satrampadu, Eluru</strong> | 2019</p>
-                    <p>Completed foundational education with a focus on core subjects, developing a strong academic base.</p>
-                </div>
-                <i class="fas fa-chevron-down" style="color: #f97316;"></i>
-            </div>
-
-            <div class="expand-content">
-                <p>KPR & JL Siddhartha Vidyalaya is a reputed school located in Satrampadu, Eluru, known for academic excellence and student development.</p>
-                <p>📍 Satrampadu, Eluru, Andhra Pradesh</p><br>
-                <p>🌐 <a href="https://school.careers360.com/schools/siddhartha-quest-school-eluru" target="_blank">Visit School Website</a></p><br>
-                <img src="../images/school.jpg" alt="Siddhartha Vidyalaya" class="edu-image">
-            </div>
-        </div>
-
-    </section>
-    </div>
-        
         <div id="projects"></div>
 
         <h1 class="project-heading">Projects & Hands-on Experience</h1>
 
-    <section class="projects-section">
-        
-        <div class="projects-container">
-            
-            <!-- Project 1 -->
-            <div class="project-card">
-                <img class="project-bg" src="../images/loan.jpeg" alt="finance project">
-                <div class="project-overlay"></div>
-                <h3 class="project-title">Loan Agency Management</h3>
-                <div class="project-info">
-                    <p class="project-description">
-                        Developed a full-stack Loan Management Web Application with borrower-lender dashboards, real-time tracking, and secure payment features using Django.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://loan-agency.onrender.com" target="_blank"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        <section class="projects-section">
+
+            <div class="projects-container">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img class="project-bg" src="../images/loan.jpeg" alt="finance project">
+                    <div class="project-overlay"></div>
+                    <h3 class="project-title">Loan Agency Management</h3>
+                    <div class="project-info">
+                        <p class="project-description">
+                            Developed a full-stack Loan Management Web Application with borrower-lender dashboards,
+                            real-time tracking, and secure payment features using Django.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://loan-agency.onrender.com" target="_blank"><i
+                                    class="fas fa-external-link-alt"></i> Live Site</a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="project-card">
-                <img class="project-bg" src="../images/skin.jpeg" alt="skin disease project">
-                <div class="project-overlay"></div>
-                <h3 class="project-title">Skin Disease Detection</h3>
-                <div class="project-info">
-                    <p class="project-description">
-                        An AI-powered system for detecting skin diseases using deep learning models and real-time predictions.
-                    </p>
-                    <div class="project-links">
-                        <a href="https://github.com/manmadha8688/skin_project" target="_blank"><i class="fab fa-github"></i> Code</a>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img class="project-bg" src="../images/skin.jpeg" alt="skin disease project">
+                    <div class="project-overlay"></div>
+                    <h3 class="project-title">Skin Disease Detection</h3>
+                    <div class="project-info">
+                        <p class="project-description">
+                            An AI-powered system for detecting skin diseases using deep learning models and real-time
+                            predictions.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://github.com/manmadha8688/skin_project" target="_blank"><i
+                                    class="fab fa-github"></i> Code</a>
+                        </div>
                     </div>
                 </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img class="project-bg" src="../images/archedge.png" alt="Archedge official website project">
+                    <div class="project-overlay"></div>
+                    <h3 class="project-title">Archedge — Official Website</h3>
+                    <div class="project-info">
+                        <p class="project-description">
+                            Designed and developed the official website for Archedge, featuring modern UI, animated
+                            product
+                            showcases, brand-specific pages, and SEO-friendly structure using HTML, CSS, and JavaScript.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://archedge.pro" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
             </div>
-            
 
-        </div>
+        </section>
 
-    </section>
-        
         <div id="contact-me"></div>
         <section class="contact-section">
-        <span>
-            ----------  CONTACT ME  ----------
-        </span>
-        
-        <div class="contact-left">
-            <h2>If you like what you see,
-                 let's work together 🤝</h2>
-                 
-            <p>Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as possible.</p>
-            <div class="info">
-                <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong>
-                 Thokalapalli village ,nidamarru mandal ,eluru district ,andhra pradesh  534406
-                    <br><br><a href="https://www.google.com/maps/place/Thokalapalle,+Andhra+Pradesh/@16.7440851,81.3329253,6078m" target="_blank">
-                        <button class="direction" >
-                            📍 Get Directions
-                        </button>
+            <span>
+                ---------- CONTACT ME ----------
+            </span>
+
+            <div class="contact-left">
+                <h2>If you like what you see,
+                    let's work together 🤝</h2>
+
+                <p>Get in touch and let me know how I can help. Fill out the form and I’ll be in touch as soon as
+                    possible.</p>
+                <div class="info">
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Address:</strong>
+                        Thokalapalli village ,nidamarru mandal ,eluru district ,andhra pradesh 534406
+                        <br><br><a
+                            href="https://www.google.com/maps/place/Thokalapalle,+Andhra+Pradesh/@16.7440851,81.3329253,6078m"
+                            target="_blank">
+                            <button class="direction">
+                                📍 Get Directions
+                            </button>
+                        </a>
+                    </p>
+                    <p><i class="fas fa-phone"></i> <strong>Phone:</strong>
+                        <a href="tel:8309623469">(+91) 8309623469 </a> <br>
+                        <a href="tel:9346016624"> (+91) 9346016624 </a>
+                    </p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong>
+                        <a href="mailto:manmadhajayamangala777@gmail.com">manmadhajayamangala777@gmail.com</a>
+                    </p>
+
+                </div>
+                <div class="social-icon">
+                    <a
+                        href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"><i
+                            class="fab fa-linkedin-in"></i>
                     </a>
-                </p>   
-                <p><i class="fas fa-phone"></i> <strong>Phone:</strong> 
-                  <a href="tel:8309623469">(+91)  8309623469 </a> <br> 
-                 <a href="tel:9346016624"> (+91)  9346016624 </a>
-                </p>
-<p><i class="fas fa-envelope"></i> <strong>Email:</strong> 
-                    <a href="mailto:manmadhajayamangala777@gmail.com">manmadhajayamangala777@gmail.com</a></p>
-                
-            </div>
-            <div class="social-icon">
-                <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" ><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
-        <div class="form-contact">
-        <div class="contact-right">
-            
-            <form action="https://formsubmit.co/manmadhajayamangala777@email.com" method="POST" class="form" id="contactform" target="_blank">
+                    <a href="https://wa.me/8309623469" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
 
-                
-            <label>Name</label>           
-            <input type="text" placeholder="Enter your name" id="name" name="name" required>
-            <label>Email</label> 
-            <input type="email" placeholder="Enter your mail ID" id="email" name="email" required>
-            <label>phone </label> 
-            <input type="text" placeholder="Phone Number" id="phone" maxlength="10" name="phone" required>
-            <label>Message</label> 
-            <textarea rows="4" placeholder="Write message..." id="message" maxlength="100" name="message" required></textarea>
-            <button type="submit" onclick="submitForm()">SEND Email</button>
-        </form>
+                </div>
+            </div>
+            <div class="form-contact">
+                <div class="contact-right">
 
-        </div>
-        </div>
-    </section>
-    <script>
-        function submitForm() {
-            // Prevent form from submitting the default way
-            
-            const form = document.getElementById("contactform");
-            // Get form data
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const phone = document.getElementById("phone").value;
-            const message = document.getElementById("message").value;
-    
-            // Validate data
-            if (!name || !email || !phone || !message) {
-                event.preventDefault();
-                alert("Please fill out all fields!");
-                return;
-            }
-            else {
-                const isconfirm = confirm("name :"+name+"\nphone :"+phone+"\nEmail :"+email+"\nmessasge :"+message)
-                if (!isconfirm) {
-                    alert("Message cancled....!!");
-                    return false; 
+                    <form action="https://formsubmit.co/manmadhajayamangala777@gmail.com" method="POST" class="form"
+                        id="contactform" target="_blank">
+
+
+                        <input type="hidden" name="_next" value="https://manmadha8688.github.io/Manmadha_Portfolio/home/thank.html">
+
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter your name" id="name" name="name" required>
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Enter your mail ID" id="email" name="email" required>
+                        <label for="phone">phone </label>
+                        <input type="text" placeholder="Phone Number" id="phone" maxlength="10" name="phone" required>
+                        <label for="message">Message</label>
+                        <textarea rows="4" placeholder="Write message..." id="message" maxlength="100" name="message"
+                            required></textarea>
+                        <button type="submit" onclick="submitForm()">SEND Email</button>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+        <script>
+            function submitForm() {
+                // Prevent form from submitting the default way
+
+                const form = document.getElementById("contactform");
+                // Get form data
+                const name = document.getElementById("name").value;
+                const email = document.getElementById("email").value;
+                const phone = document.getElementById("phone").value;
+                const message = document.getElementById("message").value;
+
+                // Validate data
+                if (!name || !email || !phone || !message) {
+                    event.preventDefault();
+                    alert("Please fill out all fields!");
+                    return;
                 }
-                
-                return True;
+                else {
+                    const isconfirm = confirm("name :" + name + "\nphone :" + phone + "\nEmail :" + email + "\nmessasge :" + message)
+                    if (!isconfirm) {
+                        alert("Message cancled....!!");
+                        return false;
+                    }
+
+                    return True;
+                }
             }
-        }
-        
-    </script>
+
+        </script>
 
 
-       
+
     </div>
 
     <!-- Scroll to Top Button -->
-    <button id="scrollToTop" onclick="scrollToTop()"><img src="../images/scroll.png"></button>
+    <button id="scrollToTop" onclick="scrollToTop()"></button>
+
 
     <!-- JavaScript for Sticky Navbar, Dark Mode & Scroll-to-Top -->
     <script src="./scroll-animations.js"></script>
     <script>function toggleMobileMenu() {
-      const menu = document.getElementById("mobileMenu");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex";
-    }
+            const menu = document.getElementById("mobileMenu");
+            menu.style.display = menu.style.display === "flex" ? "none" : "flex";
+        }
 
-    function toggleTheme() {
-      document.body.classList.toggle("dark-theme");
-    }
+        function toggleTheme() {
+            document.body.classList.toggle("dark-theme");
+        }
 
         window.addEventListener("scroll", function () {
-    let navbar = document.getElementById("navbar-desktop");
-    let scrollBtn = document.getElementById("scrollToTop");
+            let navbar = document.getElementById("navbar-desktop");
+            let scrollBtn = document.getElementById("scrollToTop");
 
-    if ( scrollBtn) {
-        if (window.scrollY > 50) {
-            navbar.classList.add("sticky");
-            scrollBtn.style.display = "block";
-        } else {
-            navbar.classList.remove("sticky");
-            scrollBtn.style.display = "none";
-        }
-    }
-});
+            if (scrollBtn) {
+                if (window.scrollY > 50) {
+                    navbar.classList.add("sticky");
+                    scrollBtn.style.display = "block";
+                } else {
+                    navbar.classList.remove("sticky");
+                    scrollBtn.style.display = "none";
+                }
+            }
+        });
 
 
         function scrollToTop() {
@@ -683,4 +779,5 @@
     </script>
 
 </body>
+
 </html>
