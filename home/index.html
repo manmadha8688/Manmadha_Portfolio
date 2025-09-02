@@ -80,7 +80,7 @@
         }
 
         .navbar-desktop .menu li a:hover {
-            color: #00f7ff;
+            color: black;
         }
 
         /* Theme Toggle */
@@ -176,7 +176,7 @@
         }
 
         .dark-mode .menu li a:hover {
-            color: #007bff;
+            color: #dce9f6;
         }
 
         .dark-mode .social-icons a {
@@ -574,44 +574,83 @@
                     <img class="project-bg" src="../images/loan.jpeg" alt="finance project">
                     <div class="project-overlay"></div>
                     <h3 class="project-title">Loan Agency Management</h3>
+
+                    <!-- Info inside card (desktop hover) -->
                     <div class="project-info">
                         <p class="project-description">
                             Developed a full-stack Loan Management Web Application with borrower-lender dashboards,
                             real-time tracking, and secure payment features using Django.
                         </p>
                         <div class="project-links">
-                            <a href="https://loan-agency.onrender.com" target="_blank"><i
-                                    class="fas fa-external-link-alt"></i> Live Site</a>
+                            <a href="https://loan-agency.onrender.com" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> Live Site
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Info outside card (mobile always visible) -->
+                <div class="project-info-mobile">
+                    <div class="project-links">
+                        <a href="https://loan-agency.onrender.com" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Site
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        Developed a full-stack Loan Management Web Application with borrower-lender dashboards,
+                        real-time tracking, and secure payment features using Django.
+                    </p>
+                    
+                </div>
+
 
                 <!-- Project 2 -->
                 <div class="project-card">
                     <img class="project-bg" src="../images/skin.jpeg" alt="skin disease project">
                     <div class="project-overlay"></div>
                     <h3 class="project-title">Skin Disease Detection</h3>
+
+                    <!-- Desktop hover info -->
                     <div class="project-info">
                         <p class="project-description">
                             An AI-powered system for detecting skin diseases using deep learning models and real-time
                             predictions.
                         </p>
                         <div class="project-links">
-                            <a href="https://github.com/manmadha8688/skin_project" target="_blank"><i
-                                    class="fab fa-github"></i> Code</a>
+                            <a href="https://github.com/manmadha8688/skin_project" target="_blank">
+                                <i class="fab fa-github"></i> Code
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <!-- Mobile always visible info -->
+                <div class="project-info-mobile">
+                    <div class="project-links">
+                        <a href="https://github.com/manmadha8688/skin_project" target="_blank">
+                            <i class="fab fa-github"></i> Code
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        An AI-powered system for detecting skin diseases using deep learning models and real-time
+                        predictions.
+                    </p>
+                    
+                </div>
+
                 <!-- Project 3 -->
+
                 <div class="project-card">
                     <img class="project-bg" src="../images/archedge.png" alt="Archedge official website project">
                     <div class="project-overlay"></div>
                     <h3 class="project-title">Archedge — Official Website</h3>
+
+                    <!-- Info inside card (desktop hover only) -->
                     <div class="project-info">
                         <p class="project-description">
                             Designed and developed the official website for Archedge, featuring modern UI, animated
-                            product
-                            showcases, brand-specific pages, and SEO-friendly structure using HTML, CSS, and JavaScript.
+                            product showcases, brand-specific pages, and SEO-friendly structure using HTML, CSS, and
+                            JavaScript.
                         </p>
                         <div class="project-links">
                             <a href="https://archedge.pro" target="_blank">
@@ -620,6 +659,22 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Info outside card (mobile always visible) -->
+                <div class="project-info-mobile">
+                    <div class="project-links">
+                        <a href="https://archedge.pro" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Site
+                        </a>
+                    </div>
+                    <p class="project-description">
+                        Designed and developed the official website for Archedge, featuring modern UI, animated
+                        product showcases, brand-specific pages, and SEO-friendly structure using HTML, CSS, and
+                        JavaScript.
+                    </p>
+                    
+                </div>
+
 
 
 
@@ -679,7 +734,8 @@
                         id="contactform" target="_blank">
 
 
-                        <input type="hidden" name="_next" value="https://manmadha8688.github.io/Manmadha_Portfolio/home/thank.html">
+                        <input type="hidden" name="_next"
+                            value="https://manmadha8688.github.io/Manmadha_Portfolio/home/thank.html">
 
                         <label for="name">Name</label>
                         <input type="text" placeholder="Enter your name" id="name" name="name" required>
